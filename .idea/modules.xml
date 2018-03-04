@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\alex5\Desktop\PROYECTOS\hewi_mobile\app\app.iml" filepath="C:\Users\alex5\Desktop\PROYECTOS\hewi_mobile\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/hewi_mobile.iml" filepath="$PROJECT_DIR$/hewi_mobile.iml" />
-      <module fileurl="file://C:\Users\alex5\Desktop\PROYECTOS\hewi_mobile\hewi_mobile.iml" filepath="C:\Users\alex5\Desktop\PROYECTOS\hewi_mobile\hewi_mobile.iml" />
     </modules>
   </component>
 </project>
