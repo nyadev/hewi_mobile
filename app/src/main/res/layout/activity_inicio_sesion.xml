@@ -15,6 +15,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#48C9B0"
         android:orientation="vertical">
 
         <TextView
@@ -23,7 +24,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="HEWI"
-            android:textColor="#48C9B0"
+            android:textColor="#ffffff"
             android:textSize="60dp"
             android:textStyle="bold" />
 
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Inicio de sesión"
-            android:textColor="#979A9A"
+            android:textColor="#ffffff"
             android:textSize="17dp" />
 
 
@@ -150,6 +151,24 @@
         </LinearLayout>
 
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/login_opt"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text=" INICIAR SESIÓN"
+
+            />
 
     </LinearLayout>
 
