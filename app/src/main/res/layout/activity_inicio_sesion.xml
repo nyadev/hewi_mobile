@@ -167,7 +167,7 @@
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:text=" INICIAR SESIÓN"
-
+            android:onClick="IniciaSesion"
             />
 
     </LinearLayout>
