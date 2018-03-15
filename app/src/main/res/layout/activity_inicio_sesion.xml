@@ -160,7 +160,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/boton_redondo"
+            android:background="@drawable/propiedades_boton"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/login_opt"
             android:padding="10dp"
