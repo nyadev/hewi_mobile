@@ -22,11 +22,6 @@ public class pagina_principal extends Activity {
         //Ocultar ActionBar
         getActionBar().hide();
 
-        ListaContenido = getResources().getStringArray(R.array.ContenidoMenu);
-        varDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        varDrawerList = (ListView) findViewById(R.id.MenuDesplegable);
-
-        varDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, ListaContenido));
 
     }
 }
