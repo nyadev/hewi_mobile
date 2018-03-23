@@ -7,55 +7,204 @@
     android:orientation="vertical"
     tools:context="com.example.alumno.hewi_mobile.pagina_principal">
 
-    <!-- A CardView that contains a TextView -->
+    <!-- CardView correspondiente REGISTRO DE CITAS -->
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
+        android:id="@+id/CardRegistro"
         android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        card_view:cardCornerRadius="4dp">
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="16dp"
-            android:background="#48C9B0">
+            android:background="#48C9B0"
+            android:padding="16dp">
 
             <ImageView
+                android:id="@+id/ImagenUno"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:id="@+id/ImagenUno"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="16dp"
-                android:src="@drawable/registrocitas"
-                />
+                android:src="@drawable/registrocitas" />
 
             <TextView
+                android:id="@+id/AccionUno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/NombreAccion"
-                android:layout_toRightOf="@+id/ImagenUno"
                 android:layout_alignParentTop="true"
-                android:textSize="20sp"
+                android:layout_toRightOf="@+id/ImagenUno"
                 android:text="REGISTRO DE CITAS"
                 android:textColor="#FDFEFE"
-                />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Registra las citas que tengas para el día"
+                android:layout_below="@+id/AccionUno"
                 android:layout_toRightOf="@+id/ImagenUno"
-                android:layout_below="@+id/NombreAccion"
-                />
+                android:text="Registra las citas que tengas para el día" />
 
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 
 
+    <!-- CardView correspondiente a CONSULTA DE CITAS -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CardConsulta"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#48C9B0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ImagenDos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/registrocitas" />
+
+            <TextView
+                android:id="@+id/AccionDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ImagenDos"
+                android:text="REGISTRO DE CITAS"
+                android:textColor="#FDFEFE"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AccionDos"
+                android:layout_toRightOf="@+id/ImagenDos"
+                android:text="Registra las citas que tengas para el día" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- CardView correspondiente a BAJA DE CITAS -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CardBaja"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#48C9B0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ImagenTres"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/registrocitas" />
+
+            <TextView
+                android:id="@+id/AccionTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ImagenTres"
+                android:text="REGISTRO DE CITAS"
+                android:textColor="#FDFEFE"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AccionTres"
+                android:layout_toRightOf="@+id/ImagenTres"
+                android:text="Registra las citas que tengas para el día" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- CardView correspondiente a CONSULTA DE CITAS -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#48C9B0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ImagenCuatro"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/registrocitas" />
+
+            <TextView
+                android:id="@+id/NombreAccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ImagenCuatro"
+                android:text="REGISTRO DE CITAS"
+                android:textColor="#FDFEFE"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NombreAccion"
+                android:layout_toRightOf="@+id/ImagenCuatro"
+                android:text="Registra las citas que tengas para el día" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>
