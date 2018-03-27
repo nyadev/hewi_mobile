@@ -70,83 +70,109 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#eb984e"
-                                android:textColor="#ffffff"
-                                android:textSize="20dp"
-                                android:text="CURP DEL PACIENTE" />
-
                             <android.support.v7.widget.CardView
                                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                                 android:layout_gravity="center"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                card_view:cardBackgroundColor="#ecf0f1 "
+                                card_view:cardBackgroundColor="#f9e79f"
                                 card_view:cardCornerRadius="3dp"
                                 card_view:contentPadding="4dp"
                                 card_view:cardElevation="4dp"
                                 card_view:cardUseCompatPadding="true">
 
-                            <EditText
-                                android:id="@+id/editText"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="CURP"
-                                android:inputType="textPersonName" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#f39c12"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold"
+                                        android:text="CURP DEL PACIENTE" />
+
+                                    <EditText
+                                        android:id="@+id/editText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:backgroundTint="#ba4a00"
+
+                                        android:inputType="textPersonName" />
+
+                                </LinearLayout>
 
                             </android.support.v7.widget.CardView>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#eb984e"
-                                android:textColor="#ffffff"
-                                android:textSize="20dp"
-                                android:text="¿QUÉ DÍA DESEAS LLEVAR A CABO LA CITA?" />
 
                             <android.support.v7.widget.CardView
                                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                                 android:layout_gravity="center"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                card_view:cardBackgroundColor="#ecf0f1 "
+                                card_view:cardBackgroundColor="#f9e79f"
                                 card_view:cardCornerRadius="3dp"
                                 card_view:contentPadding="4dp"
                                 card_view:cardElevation="4dp"
                                 card_view:cardUseCompatPadding="true">
 
-                            <DatePicker
-                                android:id="@+id/datePicker"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#f39c12"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="¿QUÉ DÍA DESEAS LLEVAR A CABO LA CITA?" />
+
+                                    <DatePicker
+                                        android:id="@+id/datePicker"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
 
                             </android.support.v7.widget.CardView>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#eb984e"
-                                android:textColor="#ffffff"
-                                android:textSize="20dp"
-                                android:text="¿A QUÉ HORA?" />
-
                             <android.support.v7.widget.CardView
                                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                                 android:layout_gravity="center"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                card_view:cardBackgroundColor="#ecf0f1"
+                                card_view:cardBackgroundColor="#f9e79f"
                                 card_view:cardCornerRadius="3dp"
                                 card_view:contentPadding="4dp"
                                 card_view:cardElevation="4dp"
                                 card_view:cardUseCompatPadding="true">
 
-                            <TimePicker
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#f39c12"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="¿A QUÉ HORA?" />
+
+                                    <TimePicker
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
 
                             </android.support.v7.widget.CardView>
 
