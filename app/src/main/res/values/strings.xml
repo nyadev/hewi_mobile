@@ -2,7 +2,7 @@
     <string name="app_name">hewi_mobile</string>
 
     <!--CONTENIDO DEL MENÚ DESPLEGABLE-->
-    <string-array name = "ContenidoMenu">
+    <string-array name="ContenidoMenu">
         <item>Altas</item>
         <item>Bajas</item>
         <item>Cambios</item>

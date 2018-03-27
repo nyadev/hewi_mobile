@@ -59,6 +59,7 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Citas"
         card_view:cardCornerRadius="3dp"
         card_view:cardBackgroundColor="#f39c12"
         card_view:contentPadding="4dp"
@@ -86,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/ImagenUno"
-                android:text="REGISTRO DE CITAS"
+                android:text="CITAS"
                 android:textColor="#FDFEFE"
                 android:textSize="20sp" />
 
@@ -95,7 +96,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/AccionUno"
                 android:layout_toRightOf="@+id/ImagenUno"
-                android:text="Registra las citas que tengas para el día" />
+                android:text="Realiza diferentes acciones con
+tus citas actuales" />
 
         </RelativeLayout>
 
@@ -137,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/ImagenDos"
-                android:text="CONSULTA DE CITAS"
+                android:text="EXPEDIENTES"
                 android:textColor="#FDFEFE"
                 android:textSize="20sp" />
 
@@ -146,16 +148,17 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/AccionDos"
                 android:layout_toRightOf="@+id/ImagenDos"
-                android:text="Consulta las citas que tengas para el día" />
+                android:text="Consulta los expedientes de tus clientes" />
 
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 
-    <!-- CardView correspondiente a BAJA DE CITAS -->
+
+    <!-- CardView correspondiente a CERRAR SESIÓN -->
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/CardBaja"
+        android:id="@+id/CardCerrarSesion"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -164,7 +167,7 @@
         card_view:cardElevation="4dp"
         card_view:cardUseCompatPadding="true"
         card_view:cardBackgroundColor="#d35400"
-        >
+        android:onClick="CerrarSesion">
 
 
         <RelativeLayout
@@ -179,7 +182,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="16dp"
-                android:src="@drawable/baja_cita" />
+                android:src="@drawable/cerrar_sesion" />
 
             <TextView
                 android:id="@+id/AccionTres"
@@ -187,17 +190,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/ImagenTres"
-                android:text="ELIMINAR CITAS"
+                android:layout_marginTop="9dp"
+                android:text="CERRAR SESIÓN"
                 android:textColor="#FDFEFE"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/AccionTres"
-                android:layout_toRightOf="@+id/ImagenTres"
-                android:text="Con esta opción puedes eliminar citas"
-                android:id="@+id/textView4" />
 
         </RelativeLayout>
 
