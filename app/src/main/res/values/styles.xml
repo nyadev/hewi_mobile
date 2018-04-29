@@ -2,7 +2,25 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="EditUno" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#48C9B0</item>
+        <item name="colorControlActivated">#e74c3c</item>
+        <item name="android:textColorHighlight">#e74c3c</item>
+    </style>
+
+    <style name="EditDos" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#f1c40f</item>
+        <item name="colorControlActivated">#e74c3c</item>
+        <item name="android:textColorHighlight">#e74c3c</item>
+    </style>
+
+    <style name="EditTres" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#27ae60</item>
+        <item name="colorControlActivated">#e74c3c</item>
+        <item name="android:textColorHighlight">#e74c3c</item>
     </style>
 
 </resources>

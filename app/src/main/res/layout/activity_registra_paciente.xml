@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f3f4"
+    tools:context="com.example.alumno.hewi_mobile.Pacientes.registra_paciente">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CardRegistra"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#1abc9c"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ImagenPrincipal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/girl"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ImagenPrincipal"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTRA"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:text="Registra a tus pacientes en HEWI mobile."
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<!--=============================================================================================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/name"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="NOMBRE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/NomUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="APELLIDO PATERNO"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/AppUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="APPELLIDO MATERNO"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ApmUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#5d6d7e"
+                android:layout_marginTop="15dp"></LinearLayout>
+<!--=============================================================================================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/parents"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="NOMBRE DEL TUTOR"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/NomTutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="APELLIDO PATERNO DEL TUTOR"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/AppTutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="APPELLIDO MATERNO DEL TUTOR"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ApmTutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#5d6d7e"
+                android:layout_marginTop="15dp"></LinearLayout>
+<!--=============================================================================================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/mobile_phone"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="CORREO DEL TUTOR"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/CorreoTutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="CELULAR DEL TUTOR"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/CelularTutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#5d6d7e"
+                android:layout_marginTop="15dp"></LinearLayout>
+
+<!--=============================================================================================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/info"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:background="@drawable/titulos2"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="4dp"
+                        android:text="CURP DEL PACIENTE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/CurpPaciente"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginHorizontal="5dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:theme="@style/EditTres" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+<!--=============================================================================================-->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/propiedades_boton"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text=" REGISTRAR"
+                android:onClick="Registro"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

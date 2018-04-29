@@ -97,8 +97,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:ems="10"
-                android:hint="Escribe aquí"
-                android:inputType="textPersonName" />
+                android:inputType="text"
+                android:singleLine="true"
+                android:theme="@style/EditUno"/>
         </LinearLayout>
 
         <LinearLayout
@@ -141,34 +142,48 @@
             tools:layout_editor_absoluteY="329dp">
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/passUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Escribe aquí"
-                android:inputType="textPersonName" />
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:theme="@style/EditUno"/>
         </LinearLayout>
 
     </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="vertical"></LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/propiedades_boton"
-            android:layout_gravity="center"
-            android:drawableLeft="@drawable/login_opt"
-            android:padding="10dp"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:text=" INICIAR SESIÓN"
-            android:onClick="IniciaSesion"
-            />
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/propiedades_boton"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/login_opt"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text=" INICIAR SESIÓN"
+                android:onClick="IniciaSesion"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="¿Aún no tienes cuenta? REGÍSTRATE"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#48C9B0"
+                android:onClick="Registrar"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

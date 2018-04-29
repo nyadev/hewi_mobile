@@ -26,7 +26,10 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".citas"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegistroUsuario.registro_usuario" />
+        <activity android:name=".Pacientes.menu_pacientes" />
+        <activity android:name=".Pacientes.registra_paciente"></activity>
     </application>
 
 </manifest>
