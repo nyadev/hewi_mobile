@@ -29,7 +29,9 @@
             android:screenOrientation="portrait" />
         <activity android:name=".RegistroUsuario.registro_usuario" />
         <activity android:name=".Pacientes.menu_pacientes" />
-        <activity android:name=".Pacientes.registra_paciente"></activity>
+        <activity android:name=".Pacientes.registra_paciente" />
+        <activity android:name=".Pacientes.ConsultaPaciente.lista_paciente" />
+        <activity android:name=".Pacientes.ConsultaPaciente.visualizar_paciente"></activity>
     </application>
 
 </manifest>
