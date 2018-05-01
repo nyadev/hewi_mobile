@@ -31,7 +31,9 @@
         <activity android:name=".Pacientes.menu_pacientes" />
         <activity android:name=".Pacientes.registra_paciente" />
         <activity android:name=".Pacientes.ConsultaPaciente.lista_paciente" />
-        <activity android:name=".Pacientes.ConsultaPaciente.visualizar_paciente"></activity>
+        <activity android:name=".Pacientes.ConsultaPaciente.visualizar_paciente" />
+        <activity android:name=".Pacientes.ModificarPaciente.lista_paciente_modificar" />
+        <activity android:name=".Pacientes.ModificarPaciente.visualizar_paciente_modificar"></activity>
     </application>
 
 </manifest>

@@ -115,4 +115,32 @@ public class BdAction {
 
         return resultadoFinal;
     }
+
+    //==============================MODIFICA PACIENTE===============================================
+    public Boolean ModificarPaciente(String [] Variables)
+    {
+        Boolean resultadoFinal = false;
+        Boolean verificarExistencia = false;
+        Tablas tablas = new Tablas();
+        Cursor cursor = basedatos.rawQuery("SELECT CURP FROM PACIENTE", null);
+        while(cursor.moveToNext())
+        {
+            Log.i("Curp del paciente", cursor.getString(0));
+            if(Variables[0].equals(cursor.getString(0))){verificarExistencia = true;}
+        }
+        if(verificarExistencia)
+        {
+            ContentValues values = new ContentValues();
+            for(int i = 0; i < Variables.length-1; i++)
+            {
+                values.put(tablas.getNombreCampoPaciente()[i], Variables[i]);
+            }
+            basedatos.update("PACIENTE", values, "CURP = '" + Variables[0] + "'", null);
+            resultadoFinal = true;
+        }
+        Log.i("Curp del paciente2", Variables[0]);
+        Log.i("verificarExistencia", verificarExistencia.toString());
+        Log.i("resultadoFinal", resultadoFinal.toString());
+        return resultadoFinal;
+    }
 }

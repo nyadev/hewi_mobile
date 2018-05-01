@@ -1,4 +1,4 @@
-package com.example.alumno.hewi_mobile.Pacientes.ConsultaPaciente;
+package com.example.alumno.hewi_mobile.Pacientes.ModificarPaciente;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import com.example.alumno.hewi_mobile.R;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class lista_paciente extends Activity {
+public class lista_paciente_modificar extends Activity {
 
     private String CurpTerapeuta;
     private ArrayList <paciente> ArrayPaciente;
@@ -28,7 +28,7 @@ public class lista_paciente extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_paciente);
+        setContentView(R.layout.activity_lista_paciente_modificar);
 
         getActionBar().hide();
         CurpTerapeuta = getIntent().getExtras().getString("CurpTerapeuta");
@@ -45,13 +45,12 @@ public class lista_paciente extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 paciente objeto_paciente = ArrayPaciente.get(position);
-                Intent actividad = new Intent(lista_paciente.this, visualizar_paciente.class);
+                Intent actividad = new Intent(lista_paciente_modificar.this, visualizar_paciente_modificar.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("paciente", objeto_paciente);
                 actividad.putExtras(bundle);
                 actividad.putExtra("CurpTerapeuta", CurpTerapeuta);
                 startActivity(actividad);
-                finish();
             }
         });
     }
@@ -87,3 +86,4 @@ public class lista_paciente extends Activity {
         }
     }
 }
+
