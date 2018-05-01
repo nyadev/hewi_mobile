@@ -4,242 +4,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alumno.hewi_mobile.citas"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.example.alumno.hewi_mobile.Citas.citas">
 
-<!---->
-    <ScrollView
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CardRegistra"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:onClick="RegistrarCita"
+        card_view:cardBackgroundColor="#f39c12"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!---->
+            android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/ImagenPrincipal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/registro_citas"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="6dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#f39c12">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:padding="5dp"
-                    android:src="@drawable/registrocitas"/>
+                android:layout_toRightOf="@+id/ImagenPrincipal"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text=" CITAS"
-                    android:textSize="30dp"
-                    android:textColor="#ffffff"/>
+                    android:layout_height="wrap_content"
+                    android:text="REGISTRO DE CITAS"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:text="Registra las citas que tengas con tus pacientes."
+                    />
 
             </LinearLayout>
 
+        </RelativeLayout>
 
-            <TabHost
-                android:id="@+id/tabhost"
+    </android.support.v7.widget.CardView>
+
+    <!--CONSULTAR CITAS-->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CardConsulta"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ConsultaCita"
+        card_view:cardBackgroundColor="#e67e22"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ImagenPrincipalUno"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/consulta_citas"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp"
-                tools:ignore="MissingConstraints">
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ImagenPrincipalUno"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTA DE CITAS"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
-                    <TabWidget
-                        android:id="@android:id/tabs"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:text="Consulta todas tus citas de acuerdo con la fecha que quieras."
+                    />
 
-                    <FrameLayout
-                        android:id="@android:id/tabcontent"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+            </LinearLayout>
 
-                        <!--TAB UNO-->
-                        <LinearLayout
-                            android:id="@+id/tab1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+        </RelativeLayout>
 
-                            <android.support.v7.widget.CardView
-                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                                android:layout_gravity="center"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                card_view:cardBackgroundColor="#f9e79f"
-                                card_view:cardCornerRadius="3dp"
-                                card_view:contentPadding="4dp"
-                                card_view:cardElevation="4dp"
-                                card_view:cardUseCompatPadding="true">
+    </android.support.v7.widget.CardView>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="center"
-                                        android:textColor="#f39c12"
-                                        android:textSize="20dp"
-                                        android:textStyle="bold"
-                                        android:text="CURP DEL PACIENTE" />
-
-                                    <EditText
-                                        android:id="@+id/editText"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:ems="10"
-                                        android:backgroundTint="#ba4a00"
-
-                                        android:inputType="textPersonName" />
-
-                                </LinearLayout>
-
-                            </android.support.v7.widget.CardView>
-
-
-                            <android.support.v7.widget.CardView
-                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                                android:layout_gravity="center"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                card_view:cardBackgroundColor="#f9e79f"
-                                card_view:cardCornerRadius="3dp"
-                                card_view:contentPadding="4dp"
-                                card_view:cardElevation="4dp"
-                                card_view:cardUseCompatPadding="true">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="center"
-                                        android:textColor="#f39c12"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"
-                                        android:text="¿QUÉ DÍA DESEAS LLEVAR A CABO LA CITA?" />
-
-                                    <DatePicker
-                                        android:id="@+id/datePicker"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content" />
-
-                                </LinearLayout>
-
-                            </android.support.v7.widget.CardView>
-
-                            <android.support.v7.widget.CardView
-                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                                android:layout_gravity="center"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                card_view:cardBackgroundColor="#f9e79f"
-                                card_view:cardCornerRadius="3dp"
-                                card_view:contentPadding="4dp"
-                                card_view:cardElevation="4dp"
-                                card_view:cardUseCompatPadding="true">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="center"
-                                        android:textColor="#f39c12"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"
-                                        android:text="¿A QUÉ HORA?" />
-
-                                    <TimePicker
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content" />
-
-                                </LinearLayout>
-
-                            </android.support.v7.widget.CardView>
-
-                            <!--Botón para enviar registro de cita-->
-
-                            <android.support.v7.widget.CardView
-                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                                android:layout_gravity="center"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                card_view:cardBackgroundColor="#229954"
-                                card_view:cardCornerRadius="3dp"
-                                card_view:contentPadding="4dp"
-                                card_view:cardElevation="4dp"
-                                card_view:cardUseCompatPadding="true">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        android:layout_gravity="center_horizontal"
-                                        android:src="@drawable/right"/>
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="center"
-                                        android:text="¡LISTO!"
-                                        android:textColor="#ffffff"
-                                        android:textSize="20dp"
-                                        android:textStyle="bold"/>
-
-                                </LinearLayout>
-
-                            </android.support.v7.widget.CardView>
-
-                        </LinearLayout>
-
-
-                        <!--TAB DOS-->
-                        <LinearLayout
-                            android:id="@+id/tab2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-
-                        </LinearLayout>
-
-                        <!--TAB TRES-->
-                        <LinearLayout
-                            android:id="@+id/tab3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </LinearLayout>
-            </TabHost>
-
-            <!---->
-        </LinearLayout>
-    </ScrollView>
-<!---->
 </LinearLayout>

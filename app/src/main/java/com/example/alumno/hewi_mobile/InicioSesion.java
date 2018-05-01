@@ -47,7 +47,7 @@ public class InicioSesion extends Activity {
         {
             valor_NombreUsuario = NombreUsuario.getText().toString();
             valor_PassUsuario = PassUsuario.getText().toString();
-            BDatos conexion = new BDatos(this, "hewi_2", null, 1);
+            BDatos conexion = new BDatos(this, "hewi_4", null, 1);
             SQLiteDatabase basedatos = conexion.getWritableDatabase();
             BdAction accion = new BdAction(basedatos);
 

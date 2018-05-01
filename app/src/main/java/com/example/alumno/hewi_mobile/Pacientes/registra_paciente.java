@@ -96,7 +96,7 @@ public class registra_paciente extends Activity {
     public void Registro(View view) {
         if(!ValidarCampos())
         {
-            BDatos conexion = new BDatos(this, "hewi_2", null, 1);
+            BDatos conexion = new BDatos(this, "hewi_4", null, 1);
             SQLiteDatabase basedatos = conexion.getWritableDatabase();
             BdAction accion = new BdAction(basedatos);
             if(accion.RegistrarPaciente(AsignarValores()))

@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.alumno.hewi_mobile.Citas.citas;
 import com.example.alumno.hewi_mobile.Pacientes.menu_pacientes;
-
-import java.util.List;
 
 public class pagina_principal extends Activity {
 
@@ -34,6 +32,7 @@ public class pagina_principal extends Activity {
 
     public void Citas(View view) {
         Intent Citas = new Intent(this, citas.class);
+        Citas.putExtra("CurpTerapeuta", CurpUsuario);
         startActivity(Citas);
     }
 

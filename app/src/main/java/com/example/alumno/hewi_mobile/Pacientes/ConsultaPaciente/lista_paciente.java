@@ -58,7 +58,7 @@ public class lista_paciente extends Activity {
 
     public void ConsultarPacientes()
     {
-        BDatos conexion = new BDatos(getApplicationContext(), "hewi_2", null, 1);
+        BDatos conexion = new BDatos(getApplicationContext(), "hewi_4", null, 1);
         SQLiteDatabase basedatos = conexion.getWritableDatabase();
         Cursor cursor = basedatos.rawQuery("SELECT * FROM PACIENTE WHERE CURP_TERAPEUTA = '" + CurpTerapeuta + "'", null);
         ArrayPaciente = new ArrayList<paciente>();

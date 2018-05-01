@@ -86,7 +86,7 @@ public class visualizar_paciente extends Activity {
     }
 
     public void aceptar() {
-        BDatos conexion = new BDatos(getApplicationContext(), "hewi_2", null, 1);
+        BDatos conexion = new BDatos(getApplicationContext(), "hewi_4", null, 1);
         SQLiteDatabase basedatos = conexion.getWritableDatabase();
         basedatos.delete("PACIENTE", "CURP = '" + Curppaciente + "'", null);
 

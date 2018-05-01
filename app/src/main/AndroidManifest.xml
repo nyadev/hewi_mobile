@@ -25,7 +25,7 @@
             android:name=".pagina_principal"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".citas"
+            android:name=".Citas.citas"
             android:screenOrientation="portrait" />
         <activity android:name=".RegistroUsuario.registro_usuario" />
         <activity android:name=".Pacientes.menu_pacientes" />
@@ -33,7 +33,10 @@
         <activity android:name=".Pacientes.ConsultaPaciente.lista_paciente" />
         <activity android:name=".Pacientes.ConsultaPaciente.visualizar_paciente" />
         <activity android:name=".Pacientes.ModificarPaciente.lista_paciente_modificar" />
-        <activity android:name=".Pacientes.ModificarPaciente.visualizar_paciente_modificar"></activity>
+        <activity android:name=".Pacientes.ModificarPaciente.visualizar_paciente_modificar" />
+        <activity android:name=".Citas.registro_citas" />
+        <activity android:name=".Citas.consulta_citas" />
+        <activity android:name=".Citas.visualizar_cita"></activity>
     </application>
 
 </manifest>

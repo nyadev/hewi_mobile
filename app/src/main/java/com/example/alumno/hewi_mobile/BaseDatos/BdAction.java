@@ -143,4 +143,77 @@ public class BdAction {
         Log.i("resultadoFinal", resultadoFinal.toString());
         return resultadoFinal;
     }
+
+    //==============================REGISTRA CITA===================================================
+    public Boolean RegistraCita(String [] Valores)
+    {
+        Boolean verificacion = false;
+        Tablas tabla = new Tablas();
+        if(VerificarPaciente(Valores[0], Valores[1]))
+        {
+
+            if(VerificarFechaCita(Valores))
+            {
+                ContentValues values = new ContentValues();
+                for (int i = 0; i < Valores.length; i++)
+                {
+                    values.put(tabla.getNombreCampoCita()[i], Valores[i]);
+                }
+                basedatos.insert("CITAS", null, values);
+                ConsultarCitas(Valores[0], Valores[1]);
+                verificacion = true;
+            }
+
+        }
+        return verificacion;
+    }
+
+    //=============================VERIFICAR EXISTENCIA PACIENTE====================================
+
+    public Boolean VerificarPaciente(String CurpPaciente, String CurpTerapeuta)
+    {
+        Cursor cursor = basedatos.rawQuery("SELECT CURP, CURP_TERAPEUTA FROM PACIENTE", null);
+        Boolean verificacion = false;
+
+        while(cursor.moveToNext())
+        {
+            if(cursor.getString(0).equals(CurpPaciente) && cursor.getString(1).equals(CurpTerapeuta))
+                verificacion = true;
+        }
+
+        return verificacion;
+    }
+
+    public Boolean VerificarFechaCita(String [] Valores)
+    {
+        Boolean verificacion = true;
+        Cursor cursor = basedatos.rawQuery("SELECT FECHA, HORA_INICIO, HORA_FIN FROM CITAS", null);
+        while(cursor.moveToNext())
+        {
+            if(cursor.getString(0).equals(Valores[2])&& (cursor.getString(1).equals(Valores[3])||
+            cursor.getString(2).equals(Valores[4])))
+                verificacion = false;
+
+        }
+
+        return verificacion;
+    }
+
+    public void ConsultarCitas (String CurpPaciente, String CurpTerapeuta)
+    {
+        String [] citas = new String [4];
+        Cursor cursor = basedatos.rawQuery("SELECT * FROM CITAS", null);
+
+        while (cursor.moveToNext())
+        {
+            if(cursor.getString(0).equals(CurpPaciente) && cursor.getString(1).equals(CurpTerapeuta))
+            {
+                Log.i("CURP PACIENTE", cursor.getString(0));
+                Log.i("CURP TERAPEUTA", cursor.getString(1));
+                Log.i("FECHA", cursor.getString(2));
+                Log.i("HORA", cursor.getString(3));
+            }
+        }
+    }
+
 }

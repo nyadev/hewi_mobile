@@ -42,5 +42,21 @@ public class Tablas {
     public String[] getNombreCampoPaciente() {
         return NombreCampoPaciente;
     }
+
+    //=============================CITAS PACIENTE===================================================
+
+    private String CamposCita = "CURP_PACIENTE TEXT, CURP_TERAPEUTA TEXT, FECHA TEXT, HORA_INICIO TEXT, HORA_FIN TEXT";
+
+    private String [] NombreCampoCita = {"CURP_PACIENTE", "CURP_TERAPEUTA", "FECHA", "HORA_INICIO", "HORA_FIN"};
+
+    private String TablaCita = "CREATE TABLE CITAS (" + CamposCita + ")";
+
+    public String getTablaCita() {
+        return TablaCita;
+    }
+
+    public String[] getNombreCampoCita() {
+        return NombreCampoCita;
+    }
 }
 

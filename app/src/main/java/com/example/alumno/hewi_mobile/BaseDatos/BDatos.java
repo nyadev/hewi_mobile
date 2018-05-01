@@ -26,10 +26,10 @@ public class BDatos extends SQLiteOpenHelper {
         db.execSQL(Objeto_tablas.getTablaTerapeuta());
         db.execSQL(Objeto_tablas.getTablaPaciente());
         db.execSQL(Objeto_tablas.getInsertarTera());
+        db.execSQL(Objeto_tablas.getTablaCita());
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP DATABASE IF EXISTS HEWI");
     }
 }

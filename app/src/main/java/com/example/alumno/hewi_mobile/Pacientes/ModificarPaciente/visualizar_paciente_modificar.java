@@ -104,7 +104,7 @@ public class visualizar_paciente_modificar extends Activity {
     {
         if(!ValidarCampos())
         {
-            BDatos conexion = new BDatos(getApplicationContext(), "hewi_2", null, 1);
+            BDatos conexion = new BDatos(getApplicationContext(), "hewi_4", null, 1);
             BdAction accion = new BdAction((SQLiteDatabase) conexion.getWritableDatabase());
 
             if(accion.ModificarPaciente(InicializarVariables()))

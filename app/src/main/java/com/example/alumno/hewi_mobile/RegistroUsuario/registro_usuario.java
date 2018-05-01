@@ -79,7 +79,7 @@ public class registro_usuario extends Activity {
                 if(ValoresComponentes[3].length() == 18)
                 {
                     Log.i("MENSAJE", "LLEGAMOS A ESTA ZONA DEL CÓDIGO");
-                    BDatos conexion = new BDatos(this, "hewi_2", null, 1);
+                    BDatos conexion = new BDatos(this, "hewi_4", null, 1);
                     SQLiteDatabase basedatos = conexion.getWritableDatabase();
                     BdAction accion = new BdAction(basedatos);
 
